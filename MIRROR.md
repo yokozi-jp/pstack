@@ -40,7 +40,7 @@ Never copy Cursor's files onto `main` directly. That erases the edits.
    git diff upstream@{1} upstream -- skills | grep -nE '\.cursor/|agent-transcripts|cursor-team-kit|create-skill|Task'
    ```
 
-   If `agents/comment-sicko.md` or `agents/poteto-agent.md` changed, carry the change into `kiro/agents/` (`poteto-agent.json`, or `comment-sicko.prompt.txt` for the body). Those files keep the body and swap the frontmatter for Kiro's JSON.
+   If `agents/comment-sicko.md` or `agents/poteto-agent.md` changed, carry the change into the matching file in `kiro/agents/`. Those files keep the body and swap the frontmatter for Kiro's (`tools` is required there: an agent with no `tools` has no tools).
 
    Rewrite any new hits the same way as the existing edits. The Harness section in `skills/poteto-mode/SKILL.md` lists the mappings.
 

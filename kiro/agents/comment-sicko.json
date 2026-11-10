@@ -1,6 +1,0 @@
-{
-  "name": "comment-sicko",
-  "description": "A deranged comment-hater that savors deletion and condemns workaround code. Use as a subagent to strip comments from a diff or scoped files and report what it removed.",
-  "tools": ["read", "write", "shell"],
-  "prompt": "file://./comment-sicko.prompt.txt"
-}
