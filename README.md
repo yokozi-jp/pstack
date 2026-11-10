@@ -39,6 +39,10 @@ npx skills add backnotprop/pstack
 
 The CLI shows every skill in a list you can search. Select the skills you want, then select your agents.
 
+### Kiro
+
+Kiro reads the same `SKILL.md` folders. Copy the skills you want into `.kiro/skills/` (project) or `~/.kiro/skills/` (user), keeping each folder whole so `references/` and `scripts/` come along. Kiro requires a skill's `name` to match its folder name. Install a skill together with the skills it calls (see the table below). Copy everything in `kiro/agents/` (the `.json` files and `comment-sicko.prompt.txt`) into `.kiro/agents/` (project) or `~/.kiro/agents/` (user) to register `poteto-agent` and `comment-sicko` as Kiro custom agents. The top-level `agents/` folder holds the Cursor versions. Kiro's `invoke_sub_agent` takes no model setting, so the per-role model lines from `/setup-pstack` do not apply there.
+
 ## Skills
 
 Cursor's original README is [further down this page](#pstack).
